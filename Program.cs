@@ -27,3 +27,9 @@ string[] SecArray(string[] array)
     }
     return newArray;
 }
+string[] TopArray = CreateArray();
+Console.WriteLine($"Первый массив: ");
+ShowArray(TopArray);
+Console.WriteLine();
+Console.WriteLine($"Второй массив: ");
+ShowArray(SecArray(TopArray));
