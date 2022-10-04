@@ -11,3 +11,19 @@ string[] CreateArray()
     }
     return enkArray;
 }
+void ShowArray(string[] array)
+{
+    for(int i = 0; i < size; i++) Console.Write($" {array[i]} ");
+}
+string[] SecArray(string[] array)
+{
+    string[] newArray = new string[array.Length];
+    for(int i = 0; i < size; i++)
+    {
+        if(array[i].Length < enk)
+        {
+            newArray[i] = array[i];
+        }
+    }
+    return newArray;
+}
